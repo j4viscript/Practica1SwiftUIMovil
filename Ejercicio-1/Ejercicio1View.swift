@@ -23,9 +23,9 @@ suma de la siguiente forma:
 import SwiftUI
 
 struct Ejercicio1View: View {
-    @State var v1: Int
-    @State var v2: Int
-    @State var result: Int
+    @State var v1 = 0
+    @State var v2 = 0
+    @State var result = 0
     
     var body: some View {
         VStack{
@@ -64,10 +64,5 @@ struct Ejercicio1View: View {
                     .padding()
             })
         }
-    }
-}
-struct Ejercicio1View_Previews: PreviewProvider {
-    static var previews: some View {
-        Ejercicio1View(v1: 0, v2: 0, result: 0)
     }
 }
